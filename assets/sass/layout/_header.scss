@@ -1,0 +1,56 @@
+.header {
+    background-color: rgba(28, 28, 28, 0.85); // Semi-transparent dark background
+    padding: 10px 0;
+
+    &__navbar {
+        padding: 0;
+    }
+
+    &__brand {
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #ffffff;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+        & .header__logo {
+            height: 40px; // Adjust the logo size
+            margin-right: 10px;
+        }
+    }
+
+    &__menu {
+        & .header__list {
+            display: flex;
+            gap: 20px;
+
+            & .header__item {
+                & .header__link {
+                    color: $custom-color-font-1;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                    transition: color 0.3s, background-color 0.3s;
+
+                    &:hover,
+                    &:focus {
+                        color: $turquoise-green; // Hover color
+                        background-color: rgba(255, 255, 255, 0.1); // Hover background
+                        border-radius: 5px;
+                    }
+
+                    &.active {
+                        color: #00ccff; // Active link color
+                    }
+                }
+            }
+        }
+    }
+
+    &__toggler {
+        border: none;
+
+        &-icon {
+            background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255,255,255,0.95)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+        }
+    }
+}

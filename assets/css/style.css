@@ -11878,20 +11878,63 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #468585;
-  background-color: #DEF9C4;
+  color: #E2DFD0;
+  background-color: #35374B;
   margin: 0;
   padding: 0;
 }
 
+.header {
+  background-color: rgba(28, 28, 28, 0.85);
+  padding: 10px 0;
+}
+.header__navbar {
+  padding: 0;
+}
+.header__brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.header__brand .header__logo {
+  height: 40px;
+  margin-right: 10px;
+}
+.header__menu .header__list {
+  display: flex;
+  gap: 20px;
+}
+.header__menu .header__list .header__item .header__link {
+  color: #F5F7F8;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s;
+}
+.header__menu .header__list .header__item .header__link:hover, .header__menu .header__list .header__item .header__link:focus {
+  color: #9DCFAB;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+.header__menu .header__list .header__item .header__link.active {
+  color: #00ccff;
+}
+.header__toggler {
+  border: none;
+}
+.header__toggler-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255,255,255,0.95)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
 .btn-primary {
-  background-color: #35374B;
-  border-color: #344955;
+  background-color: #F5F7F8;
+  border-color: #E2DFD0;
   color: #FFF;
 }
 .btn-primary:hover {
-  background-color: #20212d;
-  border-color: #20212d;
+  background-color: #d7dfe3;
+  border-color: #d7dfe3;
 }
 
 .navbar {
@@ -11903,7 +11946,7 @@ body {
 }
 .navbar__logo {
   font-size: 40px;
-  color: #35374B;
+  color: #F5F7F8;
 }
 .navbar__menu {
   list-style: none;
@@ -11915,7 +11958,7 @@ body {
   color: #50727B;
 }
 .navbar__item:hover {
-  color: #344955;
+  color: #E2DFD0;
 }
 
 .about-us__header {
@@ -11924,7 +11967,7 @@ body {
   margin-bottom: 20px;
 }
 .about-us__text {
-  color: #35374B;
+  color: #F5F7F8;
 }
 
 .testimonials__header {
@@ -12007,12 +12050,12 @@ body {
 }
 .profile-section__info__name {
   font-size: 70px;
-  color: #35374B;
+  color: #F5F7F8;
   margin-bottom: 8px;
 }
 .profile-section__info__role {
   font-size: 30px;
-  color: #468585;
+  color: #78A083;
   margin-bottom: 8px;
 }
 .profile-section__info__description {
@@ -12025,7 +12068,7 @@ body {
   color: #FFF;
 }
 .profile-section__info__contact-btn:hover {
-  background-color: #212e35;
+  background-color: #cfcab0;
 }
 
 #mis-proyectos .carousel {
