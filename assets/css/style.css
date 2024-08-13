@@ -11918,67 +11918,23 @@ body {
   color: #344955;
 }
 
-.social-media-section__header {
+.about-us__header {
+  text-align: center;
+  font-size: 2rem;
   margin-bottom: 20px;
 }
-.social-media-section__header h2, .social-media-section__header .h2 {
-  font-size: 30px;
+.about-us__text {
   color: #35374B;
-}
-.social-media-section__icons {
-  display: flex;
-  justify-content: space-around;
-}
-.social-media-section__icons .social-media-icon {
-  font-size: 5em;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-.social-media-section__icons .social-media-icon:hover {
-  transform: scale(1.2);
-}
-.social-media-section__icons p {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #344955;
 }
 
-.skills-section {
-  margin-top: 5rem;
+.testimonials__header {
+  text-align: center;
+  margin-bottom: 30px;
 }
-.skills-section__header {
-  margin-bottom: 2rem;
-}
-.skills-section__title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #35374B;
-}
-.skills-section__content {
-  margin-top: 2rem;
-}
-.skills-section__row {
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-}
-.skills-section__category-header {
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: #344955;
-}
-.skills-section__category-description {
-  font-size: 1rem;
-  color: #50727B;
-}
-.skills-section__icons {
+.testimonials__container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
-  justify-content: flex-start;
-}
-.skills-section__icon {
-  width: 3rem;
-  height: auto;
+  justify-content: center;
 }
 
 #contact {

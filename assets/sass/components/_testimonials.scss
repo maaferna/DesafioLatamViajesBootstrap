@@ -1,0 +1,12 @@
+.testimonials {
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    // Testimonial item styles go here
+}

@@ -1,0 +1,11 @@
+.about-us {
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+   
+    &__text {
+        color: $custom-color-font-1;
+    }
+}
