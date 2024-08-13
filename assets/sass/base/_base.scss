@@ -1,0 +1,9 @@
+@import '../abstracts/variables';
+
+body {
+    font-family: $font-family-roboto;
+    color: $custom-color-4;
+    background-color: $custom-color-1;
+    margin: 0;
+    padding: 0;
+  }

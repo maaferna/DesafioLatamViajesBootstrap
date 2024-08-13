@@ -1,0 +1,34 @@
+// Importing Bootstrap and other vendor styles
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+// Layout
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+// Components
+@import 'components/buttons';
+@import 'components/cards';
+@import 'components/navbar';
+@import 'components/social-media';
+@import 'components/skills';
+@import 'components/contact';
+
+// Pages
+@import 'pages/home';
+
+// Themes
+@import 'themes/theme';
+
+// Vendor-specific overrides or additions
+@import "vendors/bootstrap";

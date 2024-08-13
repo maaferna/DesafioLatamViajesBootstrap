@@ -1,0 +1,10 @@
+.btn-primary {
+    background-color: $custom-color-font-1; 
+    border-color: $custom-color-font-2; 
+    color: $white; 
+
+    &:hover {
+        background-color: darken($custom-color-font-1, 10%); 
+        border-color: darken($custom-color-font-1, 10%); 
+    }
+}

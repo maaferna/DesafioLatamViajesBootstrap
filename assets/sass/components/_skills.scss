@@ -1,0 +1,46 @@
+.skills-section {
+    margin-top: 5rem;
+
+    &__header {
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: $custom-color-font-1;
+    }
+
+    &__content {
+        margin-top: 2rem;
+    }
+
+    &__row {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__category-header {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: $custom-color-font-2;
+    }
+
+    &__category-description {
+        font-size: 1rem;
+        color: $custom-color-font-3;
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: flex-start;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: auto;
+    }
+}

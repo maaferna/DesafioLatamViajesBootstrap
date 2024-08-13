@@ -1,0 +1,25 @@
+.navbar {
+  @include flex-center;
+  justify-content: space-between;
+  padding: 20px;
+
+  &__logo {
+      font-size: $font-size-xxl;
+      color: $custom-color-font-1; // Color personalizado para el logo
+  }
+
+  &__menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+  }
+
+  &__item {
+      font-size: $font-size-large;
+      color: $custom-color-font-3; // Color personalizado para los enlaces
+
+      &:hover {
+          color: $custom-color-font-2; // Color al pasar el cursor por encima
+      }
+  }
+}
