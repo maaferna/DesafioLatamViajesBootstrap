@@ -11961,59 +11961,6 @@ body {
   color: #E2DFD0;
 }
 
-.about-us {
-  padding: 50px 0;
-  background-color: rgba(28, 28, 28, 0.85);
-  color: #ffffff;
-}
-.about-us__header {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-.about-us__divider {
-  border-color: #ffffff;
-  margin-bottom: 30px;
-}
-.about-us__image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-@media (min-width: 768px) {
-  .about-us__image-container {
-    margin-bottom: 0;
-  }
-}
-.about-us__image {
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.about-us__image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-.about-us__text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.about-us__text-container .about-us__descripcion {
-  font-size: 1rem;
-  color: #E2DFD0;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-.about-us__text-container .about-us__descripcion:last-child {
-  margin-bottom: 0;
-}
-
 .testimonials__header {
   text-align: center;
   margin-bottom: 30px;
@@ -12071,6 +12018,131 @@ body {
   margin-right: 10px;
   color: #354B9F;
   font-size: 1.5rem;
+}
+
+.featured-destinations {
+  padding: 50px 0;
+  background-color: rgba(28, 28, 28, 0.85);
+  color: #F5F7F8;
+}
+.featured-destinations__header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.featured-destinations__divider {
+  border-color: #ffffff;
+  margin-bottom: 30px;
+}
+.featured-destinations__item {
+  margin-bottom: 30px;
+}
+.featured-destinations__card {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  background-color: #E2DFD0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.featured-destinations__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+.featured-destinations__image-container {
+  max-height: 100%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.featured-destinations__image {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+.featured-destinations__body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.featured-destinations__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #50727B;
+}
+.featured-destinations__description {
+  font-size: 1rem;
+  color: #989797;
+  margin-bottom: 10px;
+}
+.featured-destinations__price {
+  font-size: 1.2rem;
+  color: #50727B;
+}
+.featured-destinations__price > strong {
+  font-weight: bold;
+  color: #50727B;
+}
+.featured-destinations__icon {
+  margin-right: 10px;
+  color: #F1DD7B;
+}
+
+.about-us {
+  padding: 50px 0;
+  background-color: rgba(28, 28, 28, 0.85);
+  color: #ffffff;
+}
+.about-us__header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.about-us__divider {
+  border-color: #ffffff;
+  margin-bottom: 30px;
+}
+.about-us__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .about-us__image-container {
+    margin-bottom: 0;
+  }
+}
+.about-us__image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-us__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.about-us__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us__text-container .about-us__descripcion {
+  font-size: 1rem;
+  color: #E2DFD0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.about-us__text-container .about-us__descripcion:last-child {
+  margin-bottom: 0;
 }
 
 /* Customized colors requirements */
