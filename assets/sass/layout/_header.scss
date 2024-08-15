@@ -1,6 +1,6 @@
 .header {
-    background-color: rgba(28, 28, 28, 0.85); // Semi-transparent dark background
-    padding: 10px 0;
+    background-color: rgba(28, 28, 28, 0.85);
+    padding: 0px 5%;
 
     &__navbar {
         padding: 0;
@@ -34,7 +34,7 @@
                     &:hover,
                     &:focus {
                         color: $turquoise-green; // Hover color
-                        background-color: rgba(255, 255, 255, 0.1); // Hover background
+                        background-color: rgba(255, 255, 255, 0.1); 
                         border-radius: 5px;
                     }
 
@@ -54,3 +54,27 @@
         }
     }
 }
+
+.carousel-inner {
+    border-radius: 25px;
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        border-radius: 10px;
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+        color: #ffffff;
+
+        &__title {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        &__text {
+            font-size: 1rem;
+        }
+    }
+}
+

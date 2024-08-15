@@ -2436,7 +2436,7 @@ textarea.form-control-lg {
   clip: rect(0, 0, 0, 0);
   pointer-events: none;
 }
-.btn-check[disabled] + .btn, .btn-check[disabled] + .profile-section__info__contact-btn, .btn-check:disabled + .btn, .btn-check:disabled + .profile-section__info__contact-btn {
+.btn-check[disabled] + .btn, .btn-check:disabled + .btn {
   pointer-events: none;
   filter: none;
   opacity: 0.65;
@@ -2637,11 +2637,11 @@ textarea.form-control-lg {
 .input-group > .form-floating:focus-within {
   z-index: 5;
 }
-.input-group .btn, .input-group .profile-section__info__contact-btn {
+.input-group .btn {
   position: relative;
   z-index: 2;
 }
-.input-group .btn:focus, .input-group .profile-section__info__contact-btn:focus {
+.input-group .btn:focus {
   z-index: 5;
 }
 
@@ -2663,8 +2663,7 @@ textarea.form-control-lg {
 .input-group-lg > .form-control,
 .input-group-lg > .form-select,
 .input-group-lg > .input-group-text,
-.input-group-lg > .btn,
-.input-group-lg > .profile-section__info__contact-btn {
+.input-group-lg > .btn {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: var(--bs-border-radius-lg);
@@ -2673,8 +2672,7 @@ textarea.form-control-lg {
 .input-group-sm > .form-control,
 .input-group-sm > .form-select,
 .input-group-sm > .input-group-text,
-.input-group-sm > .btn,
-.input-group-sm > .profile-section__info__contact-btn {
+.input-group-sm > .btn {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: var(--bs-border-radius-sm);
@@ -2890,7 +2888,7 @@ textarea.form-control-lg {
   z-index: 4;
 }
 
-.btn, .profile-section__info__contact-btn {
+.btn {
   --bs-btn-padding-x: 0.75rem;
   --bs-btn-padding-y: 0.375rem;
   --bs-btn-font-family: ;
@@ -2924,44 +2922,44 @@ textarea.form-control-lg {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
-  .btn, .profile-section__info__contact-btn {
+  .btn {
     transition: none;
   }
 }
-.btn:hover, .profile-section__info__contact-btn:hover {
+.btn:hover {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
 }
-.btn-check + .btn:hover, .btn-check + .profile-section__info__contact-btn:hover {
+.btn-check + .btn:hover {
   color: var(--bs-btn-color);
   background-color: var(--bs-btn-bg);
   border-color: var(--bs-btn-border-color);
 }
-.btn:focus-visible, .profile-section__info__contact-btn:focus-visible {
+.btn:focus-visible {
   color: var(--bs-btn-hover-color);
   background-color: var(--bs-btn-hover-bg);
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:focus-visible + .btn, .btn-check:focus-visible + .profile-section__info__contact-btn {
+.btn-check:focus-visible + .btn {
   border-color: var(--bs-btn-hover-border-color);
   outline: 0;
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked + .btn, .btn-check:checked + .profile-section__info__contact-btn, :not(.btn-check) + .btn:active, :not(.btn-check) + .profile-section__info__contact-btn:active, .btn:first-child:active, .profile-section__info__contact-btn:first-child:active, .btn.active, .active.profile-section__info__contact-btn, .btn.show, .show.profile-section__info__contact-btn {
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
   color: var(--bs-btn-active-color);
   background-color: var(--bs-btn-active-bg);
   border-color: var(--bs-btn-active-border-color);
 }
-.btn-check:checked + .btn:focus-visible, .btn-check:checked + .profile-section__info__contact-btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, :not(.btn-check) + .profile-section__info__contact-btn:active:focus-visible, .btn:first-child:active:focus-visible, .profile-section__info__contact-btn:first-child:active:focus-visible, .btn.active:focus-visible, .active.profile-section__info__contact-btn:focus-visible, .btn.show:focus-visible, .show.profile-section__info__contact-btn:focus-visible {
+.btn-check:checked + .btn:focus-visible, :not(.btn-check) + .btn:active:focus-visible, .btn:first-child:active:focus-visible, .btn.active:focus-visible, .btn.show:focus-visible {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn-check:checked:focus-visible + .btn, .btn-check:checked:focus-visible + .profile-section__info__contact-btn {
+.btn-check:checked:focus-visible + .btn {
   box-shadow: var(--bs-btn-focus-box-shadow);
 }
-.btn:disabled, .profile-section__info__contact-btn:disabled, .btn.disabled, .disabled.profile-section__info__contact-btn, fieldset:disabled .btn, fieldset:disabled .profile-section__info__contact-btn {
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
   color: var(--bs-btn-disabled-color);
   pointer-events: none;
   background-color: var(--bs-btn-disabled-bg);
@@ -3263,14 +3261,14 @@ textarea.form-control-lg {
   color: var(--bs-btn-hover-color);
 }
 
-.btn-lg, .btn-group-lg > .btn, .btn-group-lg > .profile-section__info__contact-btn {
+.btn-lg, .btn-group-lg > .btn {
   --bs-btn-padding-y: 0.5rem;
   --bs-btn-padding-x: 1rem;
   --bs-btn-font-size: 1.25rem;
   --bs-btn-border-radius: var(--bs-border-radius-lg);
 }
 
-.btn-sm, .btn-group-sm > .btn, .btn-group-sm > .profile-section__info__contact-btn {
+.btn-sm, .btn-group-sm > .btn {
   --bs-btn-padding-y: 0.25rem;
   --bs-btn-padding-x: 0.5rem;
   --bs-btn-font-size: 0.875rem;
@@ -3637,35 +3635,23 @@ textarea.form-control-lg {
   display: inline-flex;
   vertical-align: middle;
 }
-.btn-group > .btn, .btn-group > .profile-section__info__contact-btn,
-.btn-group-vertical > .btn,
-.btn-group-vertical > .profile-section__info__contact-btn {
+.btn-group > .btn,
+.btn-group-vertical > .btn {
   position: relative;
   flex: 1 1 auto;
 }
-.btn-group > .btn-check:checked + .btn, .btn-group > .btn-check:checked + .profile-section__info__contact-btn,
+.btn-group > .btn-check:checked + .btn,
 .btn-group > .btn-check:focus + .btn,
-.btn-group > .btn-check:focus + .profile-section__info__contact-btn,
 .btn-group > .btn:hover,
-.btn-group > .profile-section__info__contact-btn:hover,
 .btn-group > .btn:focus,
-.btn-group > .profile-section__info__contact-btn:focus,
 .btn-group > .btn:active,
-.btn-group > .profile-section__info__contact-btn:active,
 .btn-group > .btn.active,
-.btn-group > .active.profile-section__info__contact-btn,
 .btn-group-vertical > .btn-check:checked + .btn,
-.btn-group-vertical > .btn-check:checked + .profile-section__info__contact-btn,
 .btn-group-vertical > .btn-check:focus + .btn,
-.btn-group-vertical > .btn-check:focus + .profile-section__info__contact-btn,
 .btn-group-vertical > .btn:hover,
-.btn-group-vertical > .profile-section__info__contact-btn:hover,
 .btn-group-vertical > .btn:focus,
-.btn-group-vertical > .profile-section__info__contact-btn:focus,
 .btn-group-vertical > .btn:active,
-.btn-group-vertical > .profile-section__info__contact-btn:active,
-.btn-group-vertical > .btn.active,
-.btn-group-vertical > .active.profile-section__info__contact-btn {
+.btn-group-vertical > .btn.active {
   z-index: 1;
 }
 
@@ -3681,23 +3667,19 @@ textarea.form-control-lg {
 .btn-group {
   border-radius: var(--bs-border-radius);
 }
-.btn-group > :not(.btn-check:first-child) + .btn, .btn-group > :not(.btn-check:first-child) + .profile-section__info__contact-btn,
+.btn-group > :not(.btn-check:first-child) + .btn,
 .btn-group > .btn-group:not(:first-child) {
   margin-left: calc(var(--bs-border-width) * -1);
 }
-.btn-group > .btn:not(:last-child):not(.dropdown-toggle), .btn-group > .profile-section__info__contact-btn:not(:last-child):not(.dropdown-toggle),
+.btn-group > .btn:not(:last-child):not(.dropdown-toggle),
 .btn-group > .btn.dropdown-toggle-split:first-child,
-.btn-group > .dropdown-toggle-split.profile-section__info__contact-btn:first-child,
-.btn-group > .btn-group:not(:last-child) > .btn,
-.btn-group > .btn-group:not(:last-child) > .profile-section__info__contact-btn {
+.btn-group > .btn-group:not(:last-child) > .btn {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
-.btn-group > .btn:nth-child(n+3), .btn-group > .profile-section__info__contact-btn:nth-child(n+3),
+.btn-group > .btn:nth-child(n+3),
 .btn-group > :not(.btn-check) + .btn,
-.btn-group > :not(.btn-check) + .profile-section__info__contact-btn,
-.btn-group > .btn-group:not(:first-child) > .btn,
-.btn-group > .btn-group:not(:first-child) > .profile-section__info__contact-btn {
+.btn-group > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
@@ -3713,12 +3695,12 @@ textarea.form-control-lg {
   margin-right: 0;
 }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, .btn-group-sm > .profile-section__info__contact-btn + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem;
 }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, .btn-group-lg > .profile-section__info__contact-btn + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
   padding-right: 0.75rem;
   padding-left: 0.75rem;
 }
@@ -3728,23 +3710,21 @@ textarea.form-control-lg {
   align-items: flex-start;
   justify-content: center;
 }
-.btn-group-vertical > .btn, .btn-group-vertical > .profile-section__info__contact-btn,
+.btn-group-vertical > .btn,
 .btn-group-vertical > .btn-group {
   width: 100%;
 }
-.btn-group-vertical > .btn:not(:first-child), .btn-group-vertical > .profile-section__info__contact-btn:not(:first-child),
+.btn-group-vertical > .btn:not(:first-child),
 .btn-group-vertical > .btn-group:not(:first-child) {
   margin-top: calc(var(--bs-border-width) * -1);
 }
-.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle), .btn-group-vertical > .profile-section__info__contact-btn:not(:last-child):not(.dropdown-toggle),
-.btn-group-vertical > .btn-group:not(:last-child) > .btn,
-.btn-group-vertical > .btn-group:not(:last-child) > .profile-section__info__contact-btn {
+.btn-group-vertical > .btn:not(:last-child):not(.dropdown-toggle),
+.btn-group-vertical > .btn-group:not(:last-child) > .btn {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.btn-group-vertical > .btn ~ .btn, .btn-group-vertical > .profile-section__info__contact-btn ~ .btn, .btn-group-vertical > .btn ~ .profile-section__info__contact-btn, .btn-group-vertical > .profile-section__info__contact-btn ~ .profile-section__info__contact-btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .btn,
-.btn-group-vertical > .btn-group:not(:first-child) > .profile-section__info__contact-btn {
+.btn-group-vertical > .btn ~ .btn,
+.btn-group-vertical > .btn-group:not(:first-child) > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
@@ -4784,7 +4764,7 @@ textarea.form-control-lg {
   display: none;
 }
 
-.btn .badge, .profile-section__info__contact-btn .badge {
+.btn .badge {
   position: relative;
   top: -1px;
 }
@@ -6724,7 +6704,7 @@ textarea.form-control-lg {
   background-color: currentcolor;
   opacity: 0.5;
 }
-.placeholder.btn::before, .placeholder.profile-section__info__contact-btn::before {
+.placeholder.btn::before {
   display: inline-block;
   content: "";
 }
@@ -11886,7 +11866,7 @@ body {
 
 .header {
   background-color: rgba(28, 28, 28, 0.85);
-  padding: 10px 0;
+  padding: 0px 5%;
 }
 .header__navbar {
   padding: 0;
@@ -11927,6 +11907,26 @@ body {
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255,255,255,0.95)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
 }
 
+.carousel-inner {
+  border-radius: 25px;
+}
+.carousel-inner .carousel-caption {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+}
+.carousel-inner .carousel-caption__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.carousel-inner .carousel-caption__text {
+  font-size: 1rem;
+}
+
 .btn-primary {
   background-color: #F5F7F8;
   border-color: #E2DFD0;
@@ -11961,13 +11961,57 @@ body {
   color: #E2DFD0;
 }
 
+.about-us {
+  padding: 50px 0;
+  background-color: rgba(28, 28, 28, 0.85);
+  color: #ffffff;
+}
 .about-us__header {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 30px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.about-us__divider {
+  border-color: #ffffff;
+  margin-bottom: 30px;
+}
+.about-us__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
-.about-us__text {
-  color: #F5F7F8;
+@media (min-width: 768px) {
+  .about-us__image-container {
+    margin-bottom: 0;
+  }
+}
+.about-us__image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.about-us__image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+.about-us__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us__text-container .about-us__descripcion {
+  font-size: 1rem;
+  color: #E2DFD0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.about-us__text-container .about-us__descripcion:last-child {
+  margin-bottom: 0;
 }
 
 .testimonials__header {
@@ -12027,99 +12071,6 @@ body {
   margin-right: 10px;
   color: #354B9F;
   font-size: 1.5rem;
-}
-
-.profile-section {
-  padding: 24px;
-}
-.profile-section__image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.profile-section__image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-.profile-section__info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 16px;
-}
-.profile-section__info__name {
-  font-size: 70px;
-  color: #F5F7F8;
-  margin-bottom: 8px;
-}
-.profile-section__info__role {
-  font-size: 30px;
-  color: #78A083;
-  margin-bottom: 8px;
-}
-.profile-section__info__description {
-  font-size: 16px;
-  color: #50727B;
-  margin-bottom: 16px;
-}
-.profile-section__info__contact-btn {
-  background-color: #454545;
-  color: #FFF;
-}
-.profile-section__info__contact-btn:hover {
-  background-color: #cfcab0;
-}
-
-#mis-proyectos .carousel {
-  position: relative;
-  max-height: 100vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#mis-proyectos .carousel-inner {
-  display: flex;
-  align-items: center;
-}
-#mis-proyectos .carousel-item {
-  transition: transform 0.5s ease;
-}
-#mis-proyectos .carousel-item img {
-  width: 85%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  transition: all 0.5s ease;
-}
-#mis-proyectos .carousel-item.active img {
-  max-width: 70%;
-  max-height: 350px;
-}
-#mis-proyectos .carousel-item:not(.active) img {
-  opacity: 0.5;
-  max-width: 40%;
-}
-#mis-proyectos .carousel-control-prev,
-#mis-proyectos .carousel-control-next {
-  z-index: 10;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5%;
-  height: 5%;
-}
-#mis-proyectos .carousel-control-prev {
-  left: 10px;
-}
-#mis-proyectos .carousel-control-next {
-  right: 10px;
-}
-#mis-proyectos .carousel-control-prev-icon,
-#mis-proyectos .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
 }
 
 /* Customized colors requirements */
