@@ -1,5 +1,7 @@
 .header {
     padding: 0px 5%;
+    height: 800px;  
+    position: relative;
 
     &__navbar {
         padding: 0;
@@ -53,86 +55,64 @@
         }
     }
 }
-
-.carousel-inner {
-    border-radius: 25px;
-
-    .carousel-caption {
-        position: absolute; 
-        background-color: rgba(0, 0, 0, 0.1);
-        padding: 15px;
-        border-radius: 10px;
-        max-width: 70%;
-        margin: 0 auto;
-        text-align: center;
-        color: #ffffff;
-        bottom: 20px; 
-        left: 50%; 
-        transform: translateX(-50%); 
-
-        &__title {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        &__text {
-            font-size: 1rem;
-        }
-    }
-}
-
-
 .header-carousel {
     .carousel-inner {
-        height: 75vh;
+        height: 100%; 
+        position: relative;
 
-        .header-carousel__img {
-            height: 100%;
-            object-fit: cover; 
+        .header-carousel__item {
+            height: 800px;  
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         .carousel-caption {
+            position: absolute;  
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
             border-radius: 5px;
-            max-width: 70%;
-            margin: 0 auto;
+            text-align: center;
+            color: white;
+            bottom: 30px;  
+            left: 50%; 
+            transform: translateX(-50%);  
+
+            &__title {
+                font-size: 1.5rem;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            &__text {
+                font-size: 1rem;
+            }
         }
     }
 
     @media (max-width: 768px) {
         .carousel-inner {
-            height: 75vh;
+            height: 500px;
         }
-        .featured-item {
-            display: flex;
-            flex-direction: column;
-          }
-        
-          .featured-image {
-            max-height: 300px; 
-          }
-        
-          .featured-caption {
-            margin-top: 10px;
-          }
+
+        .header-carousel__item {
+            height: 500px;  
+        }
+
+        .carousel-caption {
+            padding: 8px;
+            font-size: 0.9rem;
+        }
     }
-    @media (max-width: 767px) {
-        .featured-item {
-          display: flex;
-          flex-direction: column;
-        }
-      
-        .featured-image {
-          max-height: 200px; 
-        }
-      
-        .featured-caption {
-          margin-top: 5px;
-        }
-      
-        .header-title {
-          font-size: 1.5rem; 
-        }
-      }
+}
+
+
+
+.main-content {
+    padding: 0px 5%;
+    margin-top: calc(800px + 3rem);  
+
+    @media (max-width: 768px) {
+        margin-top: calc(500px + 3rem); 
+    }
 }

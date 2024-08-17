@@ -11866,6 +11866,8 @@ body {
 
 .header {
   padding: 0px 5%;
+  height: 800px;
+  position: relative;
 }
 .header__navbar {
   padding: 0;
@@ -11906,72 +11908,55 @@ body {
   background-image: url('data:image/svg+xml;utf8,<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path stroke="rgba(255,255,255,0.95)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/></svg>');
 }
 
-.carousel-inner {
-  border-radius: 25px;
-}
-.carousel-inner .carousel-caption {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 15px;
-  border-radius: 10px;
-  max-width: 70%;
-  margin: 0 auto;
-  text-align: center;
-  color: #ffffff;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.carousel-inner .carousel-caption__title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.carousel-inner .carousel-caption__text {
-  font-size: 1rem;
-}
-
 .header-carousel .carousel-inner {
-  height: 75vh;
-}
-.header-carousel .carousel-inner .header-carousel__img {
   height: 100%;
-  object-fit: cover;
+  position: relative;
+}
+.header-carousel .carousel-inner .header-carousel__item {
+  height: 800px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .header-carousel .carousel-inner .carousel-caption {
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 10px;
   border-radius: 5px;
-  max-width: 70%;
-  margin: 0 auto;
+  text-align: center;
+  color: white;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header-carousel .carousel-inner .carousel-caption__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.header-carousel .carousel-inner .carousel-caption__text {
+  font-size: 1rem;
 }
 @media (max-width: 768px) {
   .header-carousel .carousel-inner {
-    height: 75vh;
+    height: 500px;
   }
-  .header-carousel .featured-item {
-    display: flex;
-    flex-direction: column;
+  .header-carousel .header-carousel__item {
+    height: 500px;
   }
-  .header-carousel .featured-image {
-    max-height: 300px;
-  }
-  .header-carousel .featured-caption {
-    margin-top: 10px;
+  .header-carousel .carousel-caption {
+    padding: 8px;
+    font-size: 0.9rem;
   }
 }
-@media (max-width: 767px) {
-  .header-carousel .featured-item {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-carousel .featured-image {
-    max-height: 200px;
-  }
-  .header-carousel .featured-caption {
-    margin-top: 5px;
-  }
-  .header-carousel .header-title {
-    font-size: 1.5rem;
+
+.main-content {
+  padding: 0px 5%;
+  margin-top: calc(800px + 3rem);
+}
+@media (max-width: 768px) {
+  .main-content {
+    margin-top: calc(500px + 3rem);
   }
 }
 
@@ -12012,6 +11997,7 @@ body {
 .about-us {
   padding: 50px 0;
   color: #ffffff;
+  margin-top: 50px;
 }
 .about-us__header {
   text-align: center;
@@ -12416,10 +12402,6 @@ body {
 .featured-destinations__icon {
   margin-right: 10px;
   color: #F1DD7B;
-}
-
-.main-content {
-  padding: 0px 5%;
 }
 
 /* Customized colors requirements */
