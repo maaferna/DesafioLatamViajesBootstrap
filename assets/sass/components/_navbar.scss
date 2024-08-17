@@ -5,7 +5,7 @@
 
   &__logo {
       font-size: $font-size-xxl;
-      color: $custom-color-font-1; // Color personalizado para el logo
+      color: $custom-color-font-1;
   }
 
   &__menu {
@@ -16,10 +16,10 @@
 
   &__item {
       font-size: $font-size-large;
-      color: $custom-color-font-3; // Color personalizado para los enlaces
+      color: $custom-color-font-3; 
 
       &:hover {
-          color: $custom-color-font-2; // Color al pasar el cursor por encima
+          color: $custom-color-font-2; 
       }
   }
 }

@@ -1,0 +1,63 @@
+// Modal styling
+#termsModal {
+    .modal-dialog {
+      max-width: 600px;
+      margin: 30px auto;
+    }
+  
+    .modal-content {
+      background-color: $custom-color-font-1;
+      border-radius: 10px; 
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    }
+  
+    .modal-header {
+      background-color: $custom-color-font-1; 
+      border-bottom: 1px solid $custom-color-font-2; 
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  
+      .modal-title {
+        color: $custom-color-font-3; 
+        font-size: 1.5rem;
+      }
+  
+      .close {
+        color: $isabelline; 
+        opacity: 0.8;
+        text-shadow: none;
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  
+    .modal-body {
+      padding: 20px;
+      font-size: 1rem;
+      color: $custom-color-font-3; 
+      line-height: 1.5;
+  
+      p {
+        margin-bottom: 10px;
+      }
+    }
+  
+    .modal-footer {
+      background-color: $custom-color-font-2;
+      border-top: 1px solid $custom-color-font-3; 
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 10px;
+  
+      .btn-secondary {
+        background-color: $custom-color-1; 
+        color: $isabelline; 
+        border: none;
+        &:hover {
+          background-color: darken($custom-color-1, 10%); 
+        }
+      }
+    }
+  }
+  

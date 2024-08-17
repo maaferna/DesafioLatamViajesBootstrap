@@ -1,5 +1,4 @@
 .header {
-    background-color: rgba(28, 28, 28, 0.85);
     padding: 0px 5%;
 
     &__navbar {
@@ -14,7 +13,7 @@
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
         & .header__logo {
-            height: 40px; // Adjust the logo size
+            height: 40px; 
             margin-right: 10px;
         }
     }
@@ -26,20 +25,20 @@
 
             & .header__item {
                 & .header__link {
-                    color: $custom-color-font-1;
+                    color: $custom-color-font-1; 
                     font-weight: bold;
                     padding: 5px 10px;
                     transition: color 0.3s, background-color 0.3s;
 
                     &:hover,
                     &:focus {
-                        color: $turquoise-green; // Hover color
+                        color: $turquoise-green;
                         background-color: rgba(255, 255, 255, 0.1); 
                         border-radius: 5px;
                     }
 
                     &.active {
-                        color: #00ccff; // Active link color
+                        color: #00ccff;
                     }
                 }
             }
@@ -59,6 +58,7 @@
     border-radius: 25px;
 
     .carousel-caption {
+        position: absolute; 
         background-color: rgba(0, 0, 0, 0.1);
         padding: 15px;
         border-radius: 10px;
@@ -66,6 +66,9 @@
         margin: 0 auto;
         text-align: center;
         color: #ffffff;
+        bottom: 20px; 
+        left: 50%; 
+        transform: translateX(-50%); 
 
         &__title {
             font-size: 1.5rem;
@@ -78,3 +81,58 @@
     }
 }
 
+
+.header-carousel {
+    .carousel-inner {
+        height: 75vh;
+
+        .header-carousel__img {
+            height: 100%;
+            object-fit: cover; 
+        }
+
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .carousel-inner {
+            height: 75vh;
+        }
+        .featured-item {
+            display: flex;
+            flex-direction: column;
+          }
+        
+          .featured-image {
+            max-height: 300px; 
+          }
+        
+          .featured-caption {
+            margin-top: 10px;
+          }
+    }
+    @media (max-width: 767px) {
+        .featured-item {
+          display: flex;
+          flex-direction: column;
+        }
+      
+        .featured-image {
+          max-height: 200px; 
+        }
+      
+        .featured-caption {
+          margin-top: 5px;
+        }
+      
+        .header-title {
+          font-size: 1.5rem; 
+        }
+      }
+}
